@@ -1,51 +1,44 @@
 # README for Kanban Board Project
 
+A simple and intuitive Kanban Board built using React, TypeScript, and @dnd-kit. This project provides drag-and-drop functionality for managing tasks, allowing users to organize them into different columns like "To Do," "In Progress," and "Done."
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
 
-Currently, two official plugins are available:
+* Drag and Drop: Powered by @dnd-kit for a smooth drag-and-drop experience.</br>
+* Customizable Columns: Add, edit, and delete task columns.</br>
+* State Management: Manages task data efficiently with React state.</br>
+* Type Safety: Utilizes TypeScript to ensure reliability and maintainable code.</br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## Expanding the ESLint configuration
+* Frontend: React, TypeScript, Talinwind CSS
+* Drag-and-Drop: @dnd-kit
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+Before you start, ensure you have the following installed on your machine:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+* Node.js (version 16 or later)
+* npm
+
+## Installation and Setup
+
+Follow these steps to run the project locally:
+
+### 1. Clone the Repository
+```
+git clone <repository_url>  
+cd kanban-board
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. Install Dependencies
+Using npm:
+```
+npm install  
+```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### 3. Run the Application
+Using npm:
+```
+npm run dev
 ```
