@@ -42,3 +42,7 @@ Using npm:
 ```
 npm run dev
 ```
+
+## Project Demo
+See the live demo of the kanban board in action here:
+https://react-kanban-board-cyan.vercel.app/
